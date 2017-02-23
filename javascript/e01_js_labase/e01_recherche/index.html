@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Search</title>
+        <meta charset="utf-8" />
+		<link href="css/global.css" rel="stylesheet" />
+	</head>
+	<body>
+      <script>
+       function videChamp(node){
+           node.value = "";
+       }
+
+       function initChamp(node) {
+           if(node.value == "") {
+            node.value = "Text to search...";
+           }
+       }
+
+       function isNotEmpty() {
+           var bool = true;
+           var node = document.getElementById("input");
+
+           if(node.value == "" || node.value == "Text to search...") {
+               bool = false;
+           }
+
+           return bool;
+       }
+
+      </script>
+		<div>
+			<form action="http://perdu.com" method="get" onsubmit="return isNotEmpty()">
+				<div class="search-line">
+					<div class="form-left">
+						<input id="input" type="text" name="searchBox" value="Text to search..." onfocus="videChamp(this)" onblur="initChamp(this)"/>
+					</div>
+					<div class="form-right">
+						<input type="image" src="images/search-btn.png" />
+					</div>
+					<div class="clear"></div>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Supprimer un noeud</title>
+		<link rel="stylesheet" href="css/global.css" />
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		<script>
+			function supprimer() {
+          var list = document.getElementById("liste");
+          var node = document.getElementById("item1");
+
+          list.removeChild(node);
+			}
+
+			function supprimerNoeud(element) {
+          var list = document.getElementById("liste");
+          list.removeChild(element);
+			}
+		</script>
+		<div id="small-container">
+			<h3>Stéréotype informaticien</h3>
+			<ul id="liste">
+				<li id="item1" onclick="supprimer()">Aimer le badminton</li>
+				<li>Faire du vélo</li>
+				<li onmouseover="supprimerNoeud(this)">Amateur de cinéma</li>
+			</ul>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Accueil | LinkedIn</title>        
+	<link href="css/global.css" rel="stylesheet"/>
+  <script src="js/javascript.js"></script>
+</head>
+<body>
+	<div class="headerDiv">
+		<div class="siteCenter">
+			<div class="topMenuDiv">
+				<h1 class="topMenuTitle">
+					Linkedin
+				</h1>
+				<div class="topMenuSubDiv">
+					<ul>
+						<li><a href="" class="topMenuLink">Accueil</a></li>
+						<li><a href="" class="topMenuLink">Linkedin, pour quoi faire ?</a></li>
+						<li><a href="" class="topMenuLink">S'inscrire</a></li>
+						<li><a href="" class="topMenuLink noBorder">S'identifier</a></li>
+						<li class="langOption"><a href="" class="topMenuLink noBorder">Langue</a></li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+		
+	<div class="mainDiv">
+		<div class="siteCenter mainSection">
+			<div class="bodyDiv">
+				<div class="descriptionDiv">
+					<p class="motivationSection">
+						Plus de 40 millions de professionnels dans le monde utilisent LinkedIn pour échanger idées, 
+						informations et faire progresser leur carrière
+					</p>
+					
+					<div class="descGroupDiv">
+						<div class="desc desc1">Gérez votre réseau et restez à l'écoute de votre secteur</div>
+						<div class="desc desc2">Trouvez les professionnels et l'expertise dont vous avez besoin</div>
+						<div class="desc desc3">Gérez vous-même votre image professionnelle sur le Web</div>
+					</div>
+				</div>
+				
+				<div class="loginDiv">
+					<div class="loginHeaderDiv">Inscrivez-vous sur le réseau LinkedIn</div>
+					<div class="loginFormDiv">
+						<!-- TERMINER L'INTÉGRATION ICI -->
+              <form action="" methode="post" onsubmit="return validate()">
+                <div class="loginLabel">Prenom :</div>
+                <div class="loginInput"><input name="prenom" id="prenom" type="text" value=""/></div>
+                <div class="loginSeparator"></div>
+
+                <div class="loginLabel">Nom :</div>
+                <div class="loginInput"><input name="nom" id="nom" type="text" value=""/></div>
+                <div class="loginSeparator"></div>
+
+                <div class="loginLabel">Date de naiss. :</div>
+                <select name="jour">
+                    <script>
+                     for (var i = 1; i <=31; i++) {
+                         document.write("<option value='"+i+"'>"+i+"</option>");
+                     }
+                    </script>
+                </select>
+                <select name="mois">
+                    <script>
+                     for (var i = 1; i <=12; i++) {
+                         document.write("<option value='"+i+"'>"+i+"</option>");
+                     }
+                    </script>
+                </select>
+                <select name="annee">
+                    <script>
+                     for (var i = 1900; i <=2000; i++) {
+                         document.write("<option value='"+i+"'>"+i+"</option>");
+                     }
+                    </script>
+                </select>
+                <div class="loginSeparator"></div>
+
+                <div class="loginLabel">Courriel :</div>
+                <div class="loginInput"><input name="courriel" id="courriel" type="text" value=""/></div>
+                <div class="loginSeparator"></div>
+
+                <div class="loginLabel">Mot de passe :</div>
+                <div class="loginInput"><input name="mdp" id="mdp" type="password" value=""/></div>
+                <div class="loginRight">Min. de 6 caracteres</span>
+                <div class="loginSeparator"></div>
+
+                <button class=""></button>
+                </form>
+					</div>
+				</div>
+				
+				<div class="clear"></div>
+			</div>
+			
+			<div class="searchDiv">
+				<div class="searchByName">
+					<span class="searchUser">Rechercher une personne</span> : <input type="text" value="Prénom" class="searchInput" /> &nbsp; <input type="text" value="Nom" class="searchInput" />
+				</div>
+				<div class="searchOkBtn">
+					<input type="image" src="images/btn-ok.jpg" />
+				</div>
+				<div class="clear"></div>
+				
+				<p class="letterSearch">
+					<span class="letterDesc">L'annuaire LinkedIn :</span> 
+					<a href="">A</a>
+					<a href="">B</a> 
+					<a href="">C</a> 
+					<a href="">D</a> 
+					<a href="">E</a> 
+					<a href="">F</a> 
+					<a href="">G</a> 
+					<a href="">H</a> 
+					<a href="">I</a> 
+					<a href="">J</a> 
+					<a href="">K</a> 
+					<a href="">L</a> 
+					<a href="">M</a> 
+					<a href="">N</a> 
+					<a href="">O</a> 
+					<a href="">P</a> 
+					<a href="">Q</a> 
+					<a href="">R</a> 
+					<a href="">S</a> 
+					<a href="">T</a> 
+					<a href="">U</a> 
+					<a href="">V</a> 
+					<a href="">W</a> 
+					<a href="">X</a> 
+					<a href="">Y</a> 
+					<a href="">Z</a> 
+					<a href="">autres</a>  
+				</p>
+			</div>
+			
+			<div class="conditionDiv">
+				* En cliquant sur le bouton S'inscrire, vous confirmez avoir lu, compris et accepté les <a href="">Conditions générales d'utilisation</a> et la <a href="">Politique de confidentialité</a> de LinkedIn.	
+			</div>
+			
+		</div>
+	</div>
+	
+	<div class="footerDiv">
+		<div class="siteCenter">
+			<p class="society">
+				Société
+			</p>
+			<div>
+				<ul>
+					<li><a href="" class="footerLink boldLink">Service clients</a></li>
+					<li><a href="" class="footerLink">À propos de LinkedIn</a></li>
+					<li><a href="" class="footerLink">Tutoriel (en anglais)</a></li>
+					<li><a href="" class="footerLink">Blog (en anglais)</a></li>
+					<li><a href="" class="footerLink">Publicité (en anglais)</a></li>
+					<li><a href="" class="footerLink noBorder">Presse (en anglais)</a></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+html {
+	background-image:url('../images/rocket.jpg');
+	background-position:top right;
+	background-repeat:no-repeat;
+	background-color:#000;
+}
+
+h1 {
+	color:#444;
+	font-size:22px;
+	text-align:center;
+	margin-bottom:30px;
+}
+
+p {
+	margin-bottom:10px;
+}
+
+/* =====================  Effect section ====================== */
+#you-circle {
+	display:none;
+	border-radius:60px;
+	border:3px solid white;
+	position:absolute;
+	right:260px;
+	top:290px;
+	height:120px;
+	width:120px;
+}
+
+#you-arrow {
+	display:none;
+	background-image:url('../images/arrow.png');
+	background-repeat:no-repeatt;
+	background-size:100%;
+	width:64px;
+	height:64px;
+	position:absolute;
+	right:190px;
+	top:270px;
+}
+
+#you-text {
+	font-family:Arial;
+	position:absolute;
+	font-size:20px;
+	display:none;
+	color:#fff;
+	right:100px;
+	top:240px;
+}
+
+/* =====================  Main section ====================== */
+.form-section {
+	border-radius:4px;
+	background-color:#fff;
+	padding:10px;
+	width:600px;
+	margin-left:50px;
+	margin-top:50px;
+	position:relative;
+	z-index:1;
+}
+
+.form-section .question {
+	border:1px solid #ddd;
+	padding:5px;
+	margin-bottom:10px;
+}
+
+.form-section .question h2{
+	border-bottom:1px solid #ddd;
+	margin-bottom:10px;
+	font-size:1em;
+	font-weight:bold;
+}

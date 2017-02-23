@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Your Dream Trip</title>
+        <meta charset="utf-8" />
+		<link href="css/global.css" rel="stylesheet" />
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/javascript.js"></script>
+	</head>
+	<body>
+		<div id="you-circle"></div>
+		<div id="you-arrow"></div>
+		<div id="you-text">Serez-vous le prochain ?</div>
+
+    <!-- Action = destination, get = url, post = hidden -->
+    <form action="index.html" method="post">
+
+        <div class="form-section">
+        <h1>Grand concours CVM : Voyagez dans l'espace</h1>
+        <p>Sky is the limit... hé bien plus maintenant. Participez au concours et courez la chance de gagner un voyage pour 2 à bord de la navette spatiale CVM. </p>
+        <p>Remplissez le formulaire suivant et croisez-vos doigts !</p>
+
+        <div class="question">
+            <h2>Quel est votre nom ?</h2>
+            <div>
+                <input name="nom" type="text" value="" placeholder="Votre nom ici"/>
+            </div>
+        </div>
+
+        <div class="question">
+            <h2>Pourquoi voulez-vous aller dans l'espace ?</h2>
+            <div>
+                <textarea name="raison" style="width:250px;height:100px;"></textarea>
+            </div>
+        </div>
+
+        <div class="question">
+            <h2>Quel est le mot de passe de votre compte banquaire ?</h2>
+            <div>
+                Réponse : <input name="mdp" type="password" value=""/>
+            </div>
+        </div>
+
+        <div class="question">
+            <h2>Aucune question ici...</h2>
+            <div>
+                Réponse : <input name="cache" type="hidden" value=""/>
+            </div>
+        </div>
+
+        <div class="question">
+            <h2>Quelle est votre planète préférée ?</h2>
+            <div>
+                Réponse : <select id="" name="">
+                <option value="pluton">pluton</option>
+                <option value="europa" selected>europa</option>
+                <option value="lel">L'obesite morbide d'un empire post-mortem</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="question">
+            <h2>Êtes-vous un homme ou une femme ?</h2>
+            <div>
+                Réponse :
+                <div>
+                    <label><input name="genre" type="radio" value="H" checked/> Homme</label>
+                    <label><input name="genre" type="radio" value="F"/> Femme</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h2>Quels sont vos intérêts ?</h2>
+            <div>
+            Réponse :
+                <div style="margin-left:20px;">
+                    <label><input name="interets" type="checkbox" value="moto"/> Moto <br/></label>
+                    <label><input name="interets" type="checkbox" value="guerre"/> Guerre <br/></label>
+                    <label><input name="interets" type="checkbox" value="char"/> Char <br/></label>
+                </div>
+            </div>
+        </div>
+
+        <div class="question">
+            <h2>Pour terminer, appuyez sur le bon bouton</h2>
+            <div>
+                <button>Envoyer</button>
+                <!-- <input name="vieille" type="submit" value=""/> -->
+                <!-- <input name="javascript" type="button" value=""/> -->
+            </div>
+        </div>
+        </div>
+    </form>
+	</body>
+</html>

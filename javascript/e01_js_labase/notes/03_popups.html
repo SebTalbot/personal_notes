@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Les popups</title>
+		<meta charset="utf-8"/>
+	</head>
+	<body>
+      <script>
+       var age = prompt("Quel age avez-vous?");
+
+       if (age < 24) {
+           console.log("jeune");
+       }
+       else {
+           var verif = confirm("vraiment?");
+
+           if (verif) {
+               console.log("vieux");
+           }
+       }
+
+      </script>
+	</body>
+</html>

@@ -1,0 +1,31 @@
+@import url(http://fonts.googleapis.com/css?family=Calligraffitti);
+
+* {
+	margin:0;
+	padding:0;
+}
+
+html {
+	background-color:black;
+	font-family: 'Calligraffitti', cursive;
+	font-size: 20px;
+}
+
+#container {
+	background-image: url('../images/parchemin.jpg');
+	width:641px;
+	height:800px;
+	margin:10px auto;
+}
+
+#sheet-region {
+	transform: rotate(-2deg);
+	padding:110px;
+}
+
+input[type=text] {
+	width:100%;
+	background-color: transparent;
+	border:1px solid black;
+	padding:3px;
+}

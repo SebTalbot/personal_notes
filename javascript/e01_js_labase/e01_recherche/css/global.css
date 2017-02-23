@@ -1,0 +1,42 @@
+* {
+	margin:0;
+	padding:0;
+}
+
+html {
+	background-image:url('../images/search.jpg');
+	background-repeat:no-repeat;
+	background-position:top center;
+}
+
+input[type=text] {
+	width:300px;
+	border:2px solid #888;
+	border-radius:4px;
+	padding:3px;
+	color:#555;
+}
+
+input[type=image] {
+	width:30px;
+}
+
+.search-line {
+	width:370px;
+	margin:250px auto;
+}
+
+.form-left {
+	float:left;
+	width:310px;
+	padding-top:5px;
+}
+
+.form-right {
+	float:right;
+	width:50px;
+}
+
+.clear {
+	clear:both;
+}

@@ -1,0 +1,1 @@
+﻿$users = "B64BOIBE, B64CHECA, B64CHRDO, B64CUEEM, B64LAFFL, B64TOUST, B64TURTH, B64YELVA, B64PROPA, B64RAJOL, B64SAIPH, B64SALRO, B64LAUKE, B64MALO, B64MARLU, B64MICMO"foreach($item in $users){    $user = $item    new-item \\B64HV1\PROFIL$\$user + .v4 -ItemType directory}

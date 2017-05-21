@@ -1,0 +1,5 @@
+# Page inexistante
+ErrorDocument 404 http://localhost:84/error.php?code=404
+
+# erreur interne
+ErrorDocument 500 http://localhost:84/error.php?code=500

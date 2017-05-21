@@ -1,0 +1,9 @@
+RewriteEngine on
+# quand ça finit par +, alors ce qui est avant devient $1, etc.
+
+# La première partie de la regular expression suivante est :
+# Trouve un pattern dans lequel il n'y a pas de . ou de /
+
+# ^([^/\\.]+)  = $1
+# ([^/\\.]+)$ = $2
+RewriteRule ^([^/\\.]+)*[/]*([^/\\.]+)*[/]*([^/\\.]+)*[/]*$ index.php?dir1=$1&dir2=$2 [L]

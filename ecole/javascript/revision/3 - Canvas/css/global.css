@@ -1,0 +1,15 @@
+* {
+	margin: 0;
+	padding:0;
+}
+
+html {
+	background-image: url('../images/background.jpg');
+}
+
+.canvas-container {
+	width: 400px;
+	height: 300px;
+	margin: 100px auto;
+	background-image: url('../images/game.png');
+}

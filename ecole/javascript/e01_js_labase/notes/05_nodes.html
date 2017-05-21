@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Noeud HTML</title>
+		<meta charset="utf-8"/>
+		
+	</head>
+	<body>
+		<div id="texte" onmouseover="modifier(this, 'red')" onmouseout="modifier(this, 'black')">Allo</div>
+    <script>
+     function modifier(node, color) {
+         /* var node = document.getElementById("texte");*/
+
+         node.style.color = color;
+     }
+    </script>
+	</body>
+</html>

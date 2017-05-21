@@ -1,0 +1,7 @@
+# Utilite:
+# 	 Sert a avoir une instance accesible a tous ("global") et a limiter a une seule instance la classe.
+# 	 De plus, on ne gere pas sa construction/destruction.
+#
+# Attention!
+# 	Ne pas abuser de ce design patern. Reserve aux structures actives.
+#

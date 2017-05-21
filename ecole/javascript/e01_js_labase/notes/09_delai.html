@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Délai d'exécution</title>
+		<meta charset="utf-8"/>
+		<script>
+			function afficher() {
+				alert("BOO !");
+			}
+
+     /* Se produit une seule fois*/
+     setTimeout(afficher, 2 * 1000);
+
+     /* Se declenche a chaque 50 secondes*/
+     setInterval(afficher, 50 * 1000);
+
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

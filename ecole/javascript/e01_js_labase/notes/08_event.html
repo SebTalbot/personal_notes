@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Les événements</title>
+		<meta charset="utf-8"/>
+		<script>
+			// Avec la souris : onclick, onmouseover, onmousemove, onmouseout
+			function sourisEvent(event, element) {
+				console.log("Point : " + event.pageX + "/" + event.pageY);
+			}
+
+			// Pour la validation de formulaire
+			function validate() {
+				var node = document.getElementById("champTexte");
+          var success = true;
+
+          if (node.value.length < 3) {
+              success = false;
+          }
+
+          return success;
+			}
+
+			// Pour les champs (input) : onfocus, onchange, onblur, onkeyup, onkeydown
+			function champEvent(element) {
+				console.log("Modification du focus");
+			}
+		</script>
+	</head>
+	<body>
+		<p style="width:200px;border:1px solid black;" onmousemove="sourisEvent(event, this)">
+			Paragraphe
+		</p>
+		<form action="http://perdu.com" method="get" onsubmit="return validate()">
+			<input type="text" id="champTexte" name="dummy" onfocus="champEvent(this)" />
+			<button type="submit">Envoyer</button>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Local Storage</title>
+		<meta charset="utf-8">
+		<link href="css/global.css" rel="stylesheet" />
+		<script src="js/jquery.min.js"></script>
+		<script>
+	function saveMsg() {
+		$.ajax({
+			type: 'POST', 					
+			url: 'envoyer-message.php'
+		})
+		.done(function(data) {
+			alert("done")
+		})
+		.fail(function(data) {
+			$(".box").slideUp();
+			$(".warning").slideDown();
+			localStorage["msg"] = $("#box").val();
+		});
+
+	}
+
+	function deleteMsg() {
+		$(".box").slideUp();
+		$(".success").slideDown();
+		localStorage.removeItem("msg"); // unset... remove!
+	}
+
+	window.onload = function () {
+		if (localStorage["msg"] != null) {
+			$("#box").val(localStorage["msg"])
+			$(".info").fadeIn();
+		}
+	}
+</script>
+</head>
+<body>
+	<div class="container">
+		<div class="box-section">
+			<div class="warning box">Message sauvegardé localement... Serveur non disponible</div>
+			<div class="success box">Message supprimé</div>
+			<div class="error box">Impossible de rejoindre le serveur</div>
+			<div class="info box">Message local trouvé... mais non sauvegardé au serveur</div>
+		</div>
+
+		<div>
+			<div class="link-section">
+				<a href="javascript:void(0)" onclick="deleteMsg()">Supprimer</a>
+			</div>
+
+			<textarea id="box" cols="10" rows="5" class="textField"></textarea>
+		</div>
+
+		<div class="button-section">
+			<input type="button" onclick="saveMsg()" value="Sauvegarder" />
+		</div>
+	</div>
+</body>
+</html>

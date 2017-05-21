@@ -1,0 +1,10 @@
+.postit {
+	width: 307px;
+	height: 223px;
+	background-image: url("../image/post-it.png");
+	text-align: center;
+	padding-top: 80px;
+
+	-webkit-transform: rotate(-20deg);
+	-moz-transform-transform: rotate(-20deg);
+}

@@ -1,0 +1,16 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background-color: #ddd;
+}
+
+#canvas-container {
+	width: 650px;
+	height: 500px;
+	margin: 25px auto;
+	border:1px solid black;
+	overflow: hidden;
+}

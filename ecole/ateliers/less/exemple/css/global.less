@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+// ===================================
+// Variables
+
+@headingColor : #00d;
+
+// -----------------------------------
+
+* {
+	margin:0;
+	padding:0;
+}
+
+html {
+	height: 100%;
+	background-image: url('../images/background.jpg');
+	background-size:cover;
+	background-position: 50% 50%;
+	font-family: 'Oswald', sans-serif;
+	font-size:18px;
+	color:#fff;
+}
+
+ul {
+	list-style-position: inside;
+}
+
+p {
+	margin:10px 0;
+}
+
+h1 {
+	color:@headingColor;
+	text-align: center;
+	padding:20px;
+}
+
+h2 {
+	color: darken(@headingColor, 30%);
+}
+
+h3,h4,h5 {
+	color:darken(@headingColor, 50%);
+}
+
+.clear {
+	clear:both;
+}
+
+.border {
+	border:1px solid #ddd;
+	box-shadow:1px 1px 5px black;
+}
+
+a {
+	color:darken(@headingColor, 10%);
+}
+
+a:hover {
+	color:darken(@headingColor, 30%);
+}
+
+.container {
+	padding:10px;
+	width:960px;
+	margin:10px auto;
+	
+	background-color: rgba(50, 50, 50, 0.9);
+	.border
+}
+
+.border {
+	border:1px solid #ddd;
+	box-shadow:1px 1px 5px black;
+}
+
+.column {
+	float:left;
+	width:445px;
+	margin-right:10px;
+	min-height:250px;	
+	margin-top:30px;
+	padding:10px;
+	.border
+}
+
+.column-left {
+	.column;
+}
+
+.column-right {
+	.column;
+}

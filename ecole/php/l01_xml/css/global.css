@@ -1,0 +1,76 @@
+* {
+	margin:0px;
+	padding:0px;
+}
+
+.clear {
+	clear:both;	
+}
+
+
+/* ------------------------------ */
+
+#container {
+	width:900px;
+	padding-bottom:30px;	
+	margin:80px auto;
+	
+}
+
+.adminContainer {
+	width:700px;
+	margin:20px auto;
+	border:1px solid blue;
+	min-height:350px;	
+}
+
+.menu {
+	padding:10px;
+	background-color:#dddddd;
+}
+
+.adminContent {
+	padding:10px;	
+}
+
+#container .logo {
+	background-image:url('../images/logo.png');
+	background-repeat:no-repeat;
+	height:128px;
+	width:128px;
+	margin:0px auto;
+}
+
+#container .title {
+	text-align:center;
+	font-size:18px;
+}
+
+#container .searchStart {
+	text-align:center;	
+	padding-top:30px;
+	padding-bottom:20px;
+	border-bottom:3px solid gray;
+	margin-bottom:10px;
+}
+
+#searchResult .searchBar {
+	height:130px;	
+}
+
+/* ------------------------------ */
+
+.formLabel {
+	float:left;
+	width:150px;	
+}
+
+.formInput {
+	float:left;
+	width:250px;
+}
+
+.formSeparator {
+	clear:both;
+	margin-bottom:5px;
+}

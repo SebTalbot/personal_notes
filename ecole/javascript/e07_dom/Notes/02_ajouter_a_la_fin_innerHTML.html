@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Ajouter à la fin - innerHTML</title>
+		<link rel="stylesheet" href="css/global.css" />
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		<script>
+			function ajouter() {
+          var texte = prompt("Quel est le stereotype?");
+
+          var list = document.getElementById("liste");
+          list.innerHTML = list.innerHTML + "<li>" + texte + "</li>";
+			}
+		</script>
+		
+		<div id="small-container">
+			<h3>Stéréotype informaticien (innerHTML)</h3>
+			<ul id="liste">
+				<li>Aimer le badminton</li>
+				<li>Faire du vélo</li>
+				<li>Amateur de cinéma</li>
+			</ul>
+			<div class="small-section">
+				[ <a href="javascript:void(0)" onclick="ajouter()">Ajouter</a> ]
+			</div>
+		</div>
+	</body>
+</html>

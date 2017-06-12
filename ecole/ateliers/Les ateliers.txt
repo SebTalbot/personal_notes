@@ -1,7 +1,0 @@
-- LESS
-- Local Storage/Cookie
-- Les templates en JS
-- jquery UI
-- La sécurité
-- Google Analytics et Webmaster Tools
-- SEO

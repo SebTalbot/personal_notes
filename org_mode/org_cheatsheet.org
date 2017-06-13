@@ -1,0 +1,41 @@
+* Markup
+*Bold*, /italic/, =verbatim=, +strikethrough+
+
+- bulletted
+- list
+- items
+
+* outline items with *
+text of the item, you can show/hide it with =<Tab>= on the outline
+you can easily set the level with =<S-M-Left/RightArrows>=
+you can alsow move block of text with =<M-j/k>=
+** You can create sub-outline with more star **
+   and they have their own text
+** multiple star of the same level
+
+* Tables
+Start with | column name | and next line do a | - =<TAB>=
+| some | data |
+|------+------|
+|   12 |   13 |
+|   25 |      |
+
+* Export to another format
+you have a list of choices with =<C-c><C-e>=
+
+* Meta data
+#+TITLE: Introduction to Org-Mode
+
+* Source code
+write #+BEGIN_SRC <language> and do =<C-c><'>= to write the code in the chosen language
+#+BEGIN_SRC python
+  print("Hello, world");
+#+END_SRC
+if you want to see the result, do =<C-c><C-c>=
+
+* Todo list
+To easily create another item is with =<S-M-CR>=
+** TODO I need to do this
+   I can set to done with =<S-Left/RightArrow>=
+** DONE I already did this
+   CLOSED: [2017-06-12 Mon 20:34]

@@ -11,7 +11,7 @@
    <label for='name'>Name:</label>
    <!-- Need to import FormsModule in app.module.ts -->
    <input type="text" [(ngModel)]="name" name="name" />
- </div> 
+ </div>
 </form>
 
 <br/>
@@ -27,7 +27,7 @@
   </li>
 </ul>
 
-<form (submit)="addHobby(hobby.value)"> 
+<form (submit)="addHobby(hobby.value)">
   <div>
     <label for="hobby" >Hobby:</label>
     <input type="text" #hobby >

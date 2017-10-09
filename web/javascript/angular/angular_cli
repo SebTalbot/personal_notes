@@ -1,2 +1,8 @@
+Install Angular CLI:
+  npm install -g @angular/cli
+
 Create angular 4 app:
   ng new {name}
+
+Create a component inside de project:
+  ng g component {path/name}

@@ -5,7 +5,8 @@ import {
   View,
   TextInput,
   ScrollView,
-  TouchableOpacity
+  TouchableOpacity,
+  KeyboardAvoidingView,
 } from 'react-native';
 
 import Note from './Note.js';
@@ -42,8 +43,7 @@ export default class Main extends React.Component {
         <ScrollView style={styles.scrollContainer}>
           {notes}
         </ScrollView>
-
-        <View style={styles.footer}>
+        <KeyboardAvoidingView behavior='padding'>
           <TextInput
             style={styles.textInput}
             onChangeText={(noteText) => this.setState({noteText})}
@@ -52,7 +52,7 @@ export default class Main extends React.Component {
             placeholderTextColor='white'
             underlineColorAndroid='transparent'
           ></TextInput>
-        </View>
+        </KeyboardAvoidingView>
 
         <TouchableOpacity
           onPress={this.addNote.bind(this)}
@@ -104,13 +104,6 @@ const styles = StyleSheet.create({
   scrollContainer: {
     flex: 1,
     marginBottom: 100,
-  },
-  footer: {
-    position: 'absolute',
-    bottom: 0,
-    left: 0,
-    right: 0,
-    zIndex: 0,
   },
   textInput: {
     alignSelf: 'stretch',

@@ -85,12 +85,13 @@ export default class Main extends React.Component {
   }
 }
 
+const mainColor = '#3388cc';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
   header: {
-    backgroundColor: '#E91E63',
+    backgroundColor: mainColor,
     alignItems: 'center',
     justifyContent: 'center',
     borderBottomWidth: 10,
@@ -118,7 +119,7 @@ const styles = StyleSheet.create({
     zIndex: 11,
     right: 20,
     bottom: 90,
-    backgroundColor: '#E91E63',
+    backgroundColor: mainColor,
     width: 90,
     height: 90,
     borderRadius: 50,
